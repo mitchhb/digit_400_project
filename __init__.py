@@ -125,6 +125,7 @@ def register():
             password = sha256_crypt.encrypt((str(form.password.data)))
             
             c, conn = connection() #if it runs, it will post a string
+            return("Connected")
             
             x = c.execute("SELECT * FROM users WHERE username = ('{0}')", format((thwart(username))))
             
@@ -148,6 +149,23 @@ def register():
         
     except Exception as e:
             return(str(e)) # remember to remove! for debugging only!
+        
+@app.route('/welcome/')
+def welcome_to_jinja():
+    try:
+        #this is where all the python goes:
+        
+        def my_function():
+            output = ["DIGIT 400 is good", "Python, Java, php, SQL, C++","<p><strong>hello world</strong></p>", 42, "42"]
+            return output
+        
+        output = my_function()
+        
+        return render_template("templating_demo.html", output = output)
+        
+    except Exception as e:
+        return str(e)
+
         
 #sitemap
 
