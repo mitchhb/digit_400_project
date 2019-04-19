@@ -1,12 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+
 h1 {
     color:red; /* this is a css comment; */
-    font-family: fantasy;
+    font-family: 'Anton', sans-serif;
     
 }
+
+p {
+    font-family: 'Anton', sans-serif;
+}
+
 .loop {
     color:#ff9743;
 }
 
 #basic {
     color:#ff9922;
+}
+
+.navbarNav {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
 }

@@ -3,20 +3,9 @@
 {% block body %}
 
     <!-- Nav Tabs -->
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="profile" aria-selected="false">Messages</a>
-      </li>
-    </ul> <!-- END Nav Tabs -->
+
+
+<!-- END Nav Tabs -->
 
     <!-- Tab Content -->
     <div class="tab-content" id="myTabContent">
@@ -25,7 +14,7 @@
             {% for i in APP_CONTENT["Home"] %}
           
             <div class="card" style="width: 18rem;">
-              <img src="https://cdn.wallpapersafari.com/11/79/xMyfJT.jpg" class="card-img-top" alt="...">
+              <img src="https://cdn.shopify.com/s/files/1/0919/7894/products/28513873682_3fe6bc8374_o_grande.jpg?v=1512449671" class="card-img-bottom" alt="...">
               <div class="card-body">
                 <h5 class="card-title">{{i[0]}}</h5>
                 <p class="card-text">{{i[2]}}</p>
@@ -38,7 +27,7 @@
         </div>
       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <div class="card-deck">
-            {% for i in APP_CONTENT["Profile"] %}
+            {% for i in APP_CONTENT["Home"] %}
             
             <div class="card" style="width: 18rem;">
               <img src="https://cdn.wallpapersafari.com/11/79/xMyfJT.jpg" class="card-img-top" alt="...">
@@ -54,7 +43,7 @@
         </div>
       <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
         <div class="card-deck">
-            {% for i in APP_CONTENT["Contact"] %}
+            {% for i in APP_CONTENT["Home"] %}
           
             <div class="card" style="width: 18rem;">
               <img src="https://cdn.wallpapersafari.com/11/79/xMyfJT.jpg" class="card-img-top" alt="...">

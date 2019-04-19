@@ -23,9 +23,10 @@ def login_required(f):
 APP_CONTENT = Content()
 
 APP_CONTENT = {
-    "Home":[["Welcome", "/welcome/","Welcome to my awesome app!", "https://cdn.wallpapersafari.com/11/79/xMyfJT.jpg"],
-           ["Background", "/background/", "Learn more about the app here!"],
-           ["Messages", "/messages/", "Your user messages are waiting..."],],
+    "Home":[["Chassis Mount Wing", "/chassismountwing/","Check out the popular Chassis Mount Wings for many different cars!", "https://cdn.shopify.com/s/files/1/0919/7894/products/28513873682_3fe6bc8374_o_grande.jpg?v=1512449671"],
+           ["Duckbill Wing", "/duckbillwing", "Check out the different types of Duckbill Wings!"],
+           ["Splitters", "/splitters/", "The latest and best quality splitters!"],
+           ["Body Kits", "/bodykits/", "Check out the best body kits for your car!"]],
     "Profile":[["User Profile", "/profile/", "Edit your profile here!", "https://cdn.wallpapersafari.com/11/79/xMyfJT.jpg"],
               ["Settings", "/settings/", "App Settins, no biggie."],
               ["Terms of Sercive", "/tos/", "The legal stuff."],],
@@ -59,8 +60,6 @@ def index():
         return render_template("main.html", error = error)
     
     except Exception as e:
-        flash(e) # remove for production
-        error = "Invalid Credentials, try again!"
         return render_template("main.html", error = error)
     
 
@@ -149,6 +148,13 @@ def register():
         
     except Exception as e:
             return(str(e)) # remember to remove! for debugging only!
+        
+@app.route('/chassismountwing/')
+def chassis():
+    try:
+        return render_template("chassismountwing.html",)
+    except Exception as e:
+        return render_template("500.html", error = e)
         
 @app.route('/welcome/')
 def welcome_to_jinja():
