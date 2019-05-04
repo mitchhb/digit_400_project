@@ -7,73 +7,73 @@
 
 <!-- END Nav Tabs -->
 
-    <!-- Tab Content -->
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <div class="card-deck">
-            {% for i in APP_CONTENT["Home"] %}
-          
-            <div class="card" style="width: 18rem;">
-              <img src="https://cdn.shopify.com/s/files/1/0919/7894/products/28513873682_3fe6bc8374_o_grande.jpg?v=1512449671" class="card-img-bottom" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">{{i[0]}}</h5>
-                <p class="card-text">{{i[2]}}</p>
-                <a href="{{i[1]}}" class="btn btn-primary">{{i[0]}}</a>
-              </div>
-            </div>
-          
-            {% endfor %}
-          </div>
-        </div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <div class="card-deck">
-            {% for i in APP_CONTENT["Home"] %}
-            
-            <div class="card" style="width: 18rem;">
-              <img src="https://cdn.wallpapersafari.com/11/79/xMyfJT.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">{{i[0]}}</h5>
-                <p class="card-text">{{i[2]}}</p>
-                <a href="{{i[1]}}" class="btn btn-primary">{{i[0]}}</a>
-              </div>
-            </div>
-          
-            {% endfor %}
-          </div>
-        </div>
-      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-        <div class="card-deck">
-            {% for i in APP_CONTENT["Home"] %}
-          
-            <div class="card" style="width: 18rem;">
-              <img src="https://cdn.wallpapersafari.com/11/79/xMyfJT.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">{{i[0]}}</h5>
-                <p class="card-text">{{i[2]}}</p>
-                <a href="{{i[1]}}" class="btn btn-primary">{{i[0]}}</a>
-              </div>
-            </div>
-          
-            {% endfor %}
-          </div>
-        </div>
-      <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="message-tab">
-          <div class="card-deck">
-            {% for i in APP_CONTENT["Messages"] %}
-          
-            <div class="card" style="width: 18rem;">
-              <img src="https://cdn.wallpapersafari.com/11/79/xMyfJT.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">{{i[0]}}</h5>
-                <p class="card-text">{{i[2]}}</p>
-                <a href="{{i[1]}}" class="btn btn-primary">{{i[0]}}</a>
-              </div>
-            </div>
-          
-            {% endfor %}
-          </div>
-        </div>
-    </div>
- <!-- END Tab Content -->
+<div style="text-align:center">
+  <h2>Dashboard</h2>
+  <p>Click on the images below to be directed to your desired product!</p>
+    <p>You can also use the products tab in the header!</p>
+</div>  
 
+<div class="card-group">
+  <div class="card">
+    <a href="https://drifthaven.site/chassismountwing/"><img class="card-img-top" src="http://cdn.shopify.com/s/files/1/0919/7894/products/28513873682_3fe6bc8374_o_grande.jpg?v=1512449671" height="400" width="700" alt="Card image cap"></a>
+    <div class="card-body">
+      <h5 class="card-title">Chassis Mount</h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <a href="https://drifthaven.site/duckbillwing/"><img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0919/7894/products/image2_27.JPG?v=1488842898" height="400" width="700" alt="Card image cap"></a>
+    <div class="card-body">
+      <h5 class="card-title">Duckbill Wing</h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <a href="https://drifthaven.site/trunkmounted/"><img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1710/1473/products/socalsigncraft-13_1_1024x.jpg?v=1540898442" height="400" width="700" alt="Card image cap"></a>
+    <div class="card-body">
+      <h5 class="card-title">Trunk Mounted Wing</h5>
+
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="card-group">
+  <div class="card">
+    <a href="https://drifthaven.site/bodykits/"><img class="card-img-top" src="https://conceptzperformance.com/items/16681/original/main.jpg" height="400" width="700" alt="Card image cap"></a>
+    <div class="card-body">
+      <h5 class="card-title">Body Kits</h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <a href="https://drifthaven.site/diffusers/"><img class="card-img-top" src="https://assets.bigcartel.com/product_images/213493846/CF5996BF-9372-4637-8B35-D3D1C0833636.jpeg?auto=format&fit=max&h=1000&w=1000" height="400" width="700" alt="Card image cap"></a>
+    <div class="card-body">
+      <h5 class="card-title">Diffusers</h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <a href="https://drifthaven.site/splitters/"><img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1528/2121/products/IMG_0460_1280x792.JPG?v=1522952848" height="400" width="700" alt="Card image cap"></a>
+    <div class="card-body">
+      <h5 class="card-title">Splitters</h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+ <!-- END Tab Content -->
 {% endblock %}

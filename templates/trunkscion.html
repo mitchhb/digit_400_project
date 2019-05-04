@@ -1,0 +1,145 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Trunk Mount Wing for Scion</h2>
+  <p>Click on the images below to view each: Scroll to see companies that sell this item!</p>
+</div>
+    
+    
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+     <h1><center><font size="4" color="black">Scion FRS</font></center></h1> 
+    <img src="https://cdn.shopify.com/s/files/1/0919/7894/products/fullresfrs-1_2048x2048.JPG?v=1556663484" alt="FRS" height="300" width="500" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <h1><center><font size="4" color="black">Scion FRS</font></center></h1>
+    <img src="https://cdn.shopify.com/s/files/1/0919/7894/products/image1_19_2048x2048.jpeg?v=1556663484" alt="FRS" height="300" width="500" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <h1><center><font size="4" color="black">Scion FRS</font></center></h1>
+    <img src="https://www.revworksinc.com/assets/images/Products/Subaru/APR/apr_brz_gt250_1.jpg" alt="FRS" height="300" width="500" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <h1><center><font size="4" color="black">Scion FRS</font></center></h1>
+    <img src="https://www.vividracing.com/images/ACT10561420001.jpg" alt="Rx8" height="300" width="500" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+    
+    <html>
+<head>
+<style>
+div.a {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<br>
+
+    <div class="a">
+<h2><a href="https://www.battleaero.com/collections/trunk-mount/scion"><button type="button" class="btn btn-success btn-lg">Battle Aero</button></a></h2>
+<p>Battle Aero is the most popular for trunk mount wings, especially Scion. Great quality and price. Made from carbon fiber or alluminum, click the button above to view all specifications and features.</p>
+</div>
+    
+
+<div class="a">
+<h2><a href="https://crunkyourtrunk.com/collections/frontpage/products/frs-brz-carbon-atmosphere-demolisher-complete-kit"><button type="button" class="btn btn-success btn-lg">Big Country Labs FRS</button></a></h2>
+<p>The BCL Trunk Mount Wing. It is made from carbon fiber and aluminum. Great quality. Click the button above to view all the specifications and features of their product.</p>
+</div>
+
+<div class="a">
+<h2><a href="https://www.counterspacegarage.com/voltex-gt-wing-type-2-1600-255-brz-frs-gt86"><button type="button" class="btn btn-success btn-lg">Voltex Type 2 FRS</button></a></h2>
+<p>The Voltex Trunk Mount Wing. It is made from carbon fiber and aluminum. Great quality. Click the button above to view all the specifications and features of their product.</p>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
+{% endblock %}

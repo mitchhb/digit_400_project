@@ -1,0 +1,138 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Duckbill Wing for Infiniti</h2>
+  <p>Click on the images below to view each: Scroll to see companies that sell this item!</p>
+</div>
+    
+    
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+     <h1><center><font size="4" color="black">Infiniti G35</font></center></h1> 
+    <img src="https://cdn.shopify.com/s/files/1/0919/7894/products/White_G35_Coupe-33_2048x2048.jpg?v=1551140106" alt="G35" height="300" width="500" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <h1><center><font size="4" color="black">Infiniti Q50</font></center></h1>
+    <img src="https://cdn.shopify.com/s/files/1/0670/8485/products/image2_5_f028c7d4-66a5-40b1-a481-afc271f57559_1800x1800.JPG?v=1538431758" alt="Q50" height="300" width="Q50" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <h1><center><font size="4" color="black">Infiniti Q50</font></center></h1>
+    <img src="https://conceptzperformance.com/items/40334/original/DSC01686_1800x1800.jpg" alt="Q50" height="300" width="500" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <h1><center><font size="4" color="black">Infiniti G35</font></center></h1>
+    <img src="https://cdn.shopify.com/s/files/1/0919/7894/products/White_G35_Coupe-39_2048x2048.jpg?v=1551140106" alt="G35" height="300" width="500" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+    
+    <html>
+<head>
+<style>
+div.a {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<br>
+<div class="a">
+<h2><a href="https://www.battleaero.com/collections/duckbills/infiniti"><button type="button" class="btn btn-success btn-lg">Battle Aero</button></a></h2>
+<p>Battle Aero is popular for duckbill wings, especially Infiniti. Great quality and price. Made from FRP, click the button above to view all specifications and features.</p>
+</div>
+    
+<div class="a">
+<h2><a href="https://www.outcastgarage.com/products/og-designs-duckbill-trunk-carbon-fiber-infiniti-q50-14-17"><button type="button" class="btn btn-success btn-lg">Outcast Garage</button></a></h2>
+<p>The OutCast Garage Duckbill Wing. It is made from carbon fiber. Good quality. Click the button above to view all the specifications and features of their product.</p>
+</div>   
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
+{% endblock %}

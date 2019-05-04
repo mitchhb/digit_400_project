@@ -1,0 +1,144 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url("https://wallpaperaccess.com/full/37873.jpg");
+   background-repeat: no-repeat;
+  background-size: 2000px 1080px;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+    
+     <body style="background-color: darkgray;">
+
+<center><h3>Support Your Local Car Businesses!</h3></center>
+<center><p>Have a local company / business that sells or makes quality exterior car parts? Fill out this form and let us know! We may feature them!</p></center>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Company / Business Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Company / Business name..">
+
+    <label for="lname">Your Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your name..">
+      
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="country">If USA, Select State, If NOT Select None</label>
+    <select id="country" name="state">
+        <option value="none">None</option>
+<option value="PA">Alabama</option>
+<option value="PA">Alaska</option>
+<option value="PA">Arizona</option>
+<option value="PA">Arkansas</option>
+<option value="PA">California</option>
+<option value="PA">Colorado</option>
+<option value="PA">Connecticut</option>
+<option value="PA">Delaware</option>
+<option value="PA">Florida</option>
+<option value="PA">Georgia</option>
+<option value="PA">Hawaii</option>
+<option value="PA">Idaho</option>
+<option value="PA">Illinois </option>
+<option value="PA">Indiana</option>
+<option value="PA">Iowa</option>
+<option value="PA">Kansas</option>
+<option value="PA">Kentucky</option>
+<option value="PA">Louisiana</option>
+<option value="PA">Maine</option>
+<option value="PA">Maryland</option>
+<option value="PA">Massachusetts</option>
+<option value="PA">Michigan</option>
+<option value="PA">Minnesota</option>
+<option value="PA">Mississippi</option>
+<option value="PA">Missouri</option>
+<option value="PA">Montana</option>
+<option value="PA">Nebraska</option>
+<option value="PA">Nevada</option>
+<option value="PA">New Hampshire</option>
+<option value="PA">New Jersey</option>
+<option value="PA">New Mexico</option>
+<option value="PA">New York</option>
+<option value="PA">North Carolina</option>
+<option value="PA">North Dakota</option>
+<option value="PA">Ohio</option>
+<option value="PA">Oklahoma</option>
+<option value="PA">Oregon</option>
+<option value="PA">Pennsylvania</option>
+<option value="PA">Rhode Island</option>
+<option value="PA">South Carolina</option>
+<option value="PA">South Dakota</option>
+<option value="PA">Tennessee</option>
+<option value="PA">Texas</option>
+<option value="PA">Utah</option>
+<option value="PA">Vermont</option>
+<option value="PA">Virginia</option>
+<option value="PA">Washington</option>
+<option value="PA">West Virginia</option>
+<option value="PA">Wisconsin</option>
+<option value="PA">Wyoming</option>
+    </select>
+
+    <label for="subject">Tell us about it!</label>
+    <textarea id="subject" name="subject" placeholder="Tell us what this company sells and makes, quality, link website, ect.." style="height:200px"></textarea>
+
+    <input type="submit" href="https://drifthaven.site/support/submitted" value="Submit">
+  </form>
+</div>
+</html>
+
+{% endblock %}

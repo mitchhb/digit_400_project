@@ -1,0 +1,138 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Chassis Mount Wing for Lexus</h2>
+  <p>Click on the images below to view each: Scroll to see companies that sell this item!</p>
+</div>
+    
+    
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+     <h1><center><font size="4" color="black">Lexus SC300/400</font></center></h1> 
+    <img src="https://cdn.shopify.com/s/files/1/0919/7894/products/20170605_150712_2048x2048.jpg?v=1496799496" height="300" width="500" alt="SC300" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <h1><center><font size="4" color="black">Lexus IS300</font></center></h1>
+    <img src="https://cdn.shopify.com/s/files/1/0919/7894/products/bgi-wing_2048x2048.jpg?v=1529451238" height="300" width="500" alt="IS300" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <h1><center><font size="4" color="black">Lexus RC-F</font></center></h1>
+    <img src="https://cdn.shopify.com/s/files/1/0919/7894/products/Edited-231_2048x2048.jpg?v=1538004828" height="300" width="500" alt="RCF" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <h1><center><font size="4" color="black">Lexus RC-F (2)</font></center></h1>
+    <img src="https://cdn.shopify.com/s/files/1/0919/7894/products/DSC05347_2048x2048.JPG?v=1538004828" height="300" width="500" alt="RCF" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+    
+    <html>
+<head>
+<style>
+div.a {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+<div class="a">
+<h2><a href="https://www.battleaero.com/collections/chassis-mounts/lexus"><button type="button" class="btn btn-success btn-lg">Battle Aero</button></a></h2>
+<p>Battle Aero is the most popular for chassis mount wings, especially for Lexus. Great quality and price. Made from carbon fiber or alluminum, click the button above to view all specifications and features.</p>
+</div>
+    
+<div class="a">
+<h2><a href="https://streetfaction.net/products/chassis-mount-wing"><button type="button" class="btn btn-success btn-lg">Street Faction</button></a></h2>
+<p>The Street Faction Engineering Chassis Mount Wing. It is made from carbon fiber and aluminum. Great quality. Click the button above to view all the specifications and features of their product.</p>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
+{% endblock %}

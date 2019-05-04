@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
 
 
 h1 {
-    color:red; /* this is a css comment; */
-    font-family: 'Anton', sans-serif;
+    color:white; /* this is a css comment; */
+    font-family: 'Russo One', sans-serif;
     
 }
 
 p {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
 
 .loop {
