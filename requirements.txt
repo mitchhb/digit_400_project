@@ -16,7 +16,7 @@ future==0.15.2
 google-images-download==2.5.0
 idna==2.5
 itsdangerous==1.1.0
-Jinja2==2.10
+Jinja2==2.11.3
 josepy==1.1.0
 jsonpatch==1.10
 jsonpointer==1.9
